@@ -141,6 +141,32 @@ Take the following data and normalize it into a 3NF database.  You can use the w
 | Bob         | Joe      | Horse    |            |            |            |            | No          | No           |
 | Sam         | Ginger   | Dog      | Miss Kitty | Cat        | Bubble     | Fish       | Yes         | No           |
 
+----------------------------------------------------------------------------------------------------------------------
+
+| person id | Person Name | Fenced Yard | City Dweller |
+|-----------|-------------|-------------|--------------|
+| 1         | Jane        | No          | Yes          |
+| 2         | Bob         | No          | No           |
+| 3         | Sam         | Yes         | No           |
+
+| Pet type id | Pet Type |
+|-------------|----------|
+| 1           | Dog      |
+| 2           | Horse    |
+| 3           | Cat      |
+| 4           | Turtle   |
+| 5           | Fish     |
+
+| Person id | Pet type id | Pet name   |
+|-----------|-------------|------------|
+| 1         | 1           | Ellie      |
+| 2         | 2           | Joe        |
+| 3         | 1           | Ginger     |
+| 1         | 3           | Tiger      |
+| 3         | 3           | Miss Kitty |
+| 1         | 4           | Toby       |
+| 3         | 5           | Bubble     |
+
 ---
 ## Stretch Goals
 
