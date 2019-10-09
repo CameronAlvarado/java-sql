@@ -151,6 +151,10 @@ Take the following data and normalize it into a 3NF database.  You can use the w
  
 > Use a LEFT JOIN to join the Orders table onto the Customers table and check for a NULL value in the OrderID column
 
+DELETE FROM customers
+WHERE customer_id NOT IN 
+(SELECT DISTINCT customer_id FROM orders)
+
 ## Create Database and Table
 
 ### After creating the database, tables, columns, and constraint, generate the script necessary to recreate the database. This script is what you will submit for review. 
